@@ -1,0 +1,357 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ExemploVetor",
+            "request": "launch",
+            "mainClass": "ExemploVetor",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "MaiorDoVetor",
+            "request": "launch",
+            "mainClass": "MaiorDoVetor",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "SomaVetor",
+            "request": "launch",
+            "mainClass": "SomaVetor",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Alfabeto",
+            "request": "launch",
+            "mainClass": "Alfabeto",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Algarismos",
+            "request": "launch",
+            "mainClass": "Algarismos",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "Calculadora",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "CalculoDistancia",
+            "request": "launch",
+            "mainClass": "CalculoDistancia",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "ContaAteUsuarioParar",
+            "request": "launch",
+            "mainClass": "ContaAteUsuarioParar",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "ContagemRegressiva",
+            "request": "launch",
+            "mainClass": "ContagemRegressiva",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "ConversaoGraus",
+            "request": "launch",
+            "mainClass": "ConversaoGraus",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "DiaSemana",
+            "request": "launch",
+            "mainClass": "DiaSemana",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Ex15Lista03",
+            "request": "launch",
+            "mainClass": "Ex15Lista03",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Ex15Lista03For",
+            "request": "launch",
+            "mainClass": "Ex15Lista03For",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Ex21ListaC03",
+            "request": "launch",
+            "mainClass": "Ex21ListaC03",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Ex30ListaC03",
+            "request": "launch",
+            "mainClass": "Ex30ListaC03",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Exibe1a10Contado",
+            "request": "launch",
+            "mainClass": "Exibe1a10Contado",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Fatorial",
+            "request": "launch",
+            "mainClass": "Fatorial",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Fatorial0aN",
+            "request": "launch",
+            "mainClass": "Fatorial0aN",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "FatorialDoWhile",
+            "request": "launch",
+            "mainClass": "FatorialDoWhile",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "FiatUno",
+            "request": "launch",
+            "mainClass": "FiatUno",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Harmonica",
+            "request": "launch",
+            "mainClass": "Harmonica",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "ListaImpar",
+            "request": "launch",
+            "mainClass": "ListaImpar",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "ListaNumeroPerfeito",
+            "request": "launch",
+            "mainClass": "ListaNumeroPerfeito",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "ListaPares",
+            "request": "launch",
+            "mainClass": "ListaPares",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "ListaPrimosAteN",
+            "request": "launch",
+            "mainClass": "ListaPrimosAteN",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Loteria",
+            "request": "launch",
+            "mainClass": "Loteria",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "MaiorDeTres",
+            "request": "launch",
+            "mainClass": "MaiorDeTres",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "MaiorEMenor",
+            "request": "launch",
+            "mainClass": "MaiorEMenor",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "MediaEscolar",
+            "request": "launch",
+            "mainClass": "MediaEscolar",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Menu",
+            "request": "launch",
+            "mainClass": "Menu",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "MesAno",
+            "request": "launch",
+            "mainClass": "MesAno",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "NumeroPrimo",
+            "request": "launch",
+            "mainClass": "NumeroPrimo",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "OperacaoMod",
+            "request": "launch",
+            "mainClass": "OperacaoMod",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "ParImpar",
+            "request": "launch",
+            "mainClass": "ParImpar",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "PesoIdeal",
+            "request": "launch",
+            "mainClass": "PesoIdeal",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "PrimeiroGrau",
+            "request": "launch",
+            "mainClass": "PrimeiroGrau",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "SegundoGrau",
+            "request": "launch",
+            "mainClass": "SegundoGrau",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "SomaAntecessor",
+            "request": "launch",
+            "mainClass": "SomaAntecessor",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "SomaAteChegar",
+            "request": "launch",
+            "mainClass": "SomaAteChegar",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "SomaDivisores",
+            "request": "launch",
+            "mainClass": "SomaDivisores",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "SomaQuadrados",
+            "request": "launch",
+            "mainClass": "SomaQuadrados",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "SuperMario",
+            "request": "launch",
+            "mainClass": "SuperMario",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Tabuada",
+            "request": "launch",
+            "mainClass": "Tabuada",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "TesteEntrada",
+            "request": "launch",
+            "mainClass": "TesteEntrada",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "TesteIncremento",
+            "request": "launch",
+            "mainClass": "TesteIncremento",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "TestesLogicos",
+            "request": "launch",
+            "mainClass": "TestesLogicos",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Trapezio",
+            "request": "launch",
+            "mainClass": "Trapezio",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "ValorCompra",
+            "request": "launch",
+            "mainClass": "ValorCompra",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "Vetor",
+            "request": "launch",
+            "mainClass": "Vetor",
+            "projectName": "Projetos-java_2e2ed544"
+        }
+    ]
+}
