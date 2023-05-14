@@ -8,7 +8,7 @@ public class SomaAteChegar {
         Scanner scanner = new Scanner (System.in);
         int soma = 0;
         int tentativas = 0;
-        int premio = random .nextInt(901) + 100;
+        int premio = random .nextInt(901) + 100; //Valores aleatórios entre 100 e 1000
         while (soma < premio){
             System.out.print ("Digite um valor para atingir o prêmio: ");
             int n = scanner.nextInt();
