@@ -48,6 +48,7 @@ public class Ex30ListaC03 {
                 sequencia3.append(" + "); // Adicionar o sinal de "+" entre os números na sequência 3
             }
         }
+        //Armazenar cáclulos na String
         String sequencias = "Primeira sequência: " + sequencia1.toString() + " = " + soma + "\n\nSegunda sequência: " + sequencia2.toString() + " = " + somadoida + "\n\nTerceira sequência: " + sequencia3.toString() + " = " + soma2;
         // Exibe as sequências na tela
         JOptionPane.showMessageDialog(null, sequencias, "Sequências 🔢:", JOptionPane.PLAIN_MESSAGE);
