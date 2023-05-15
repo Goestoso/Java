@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IgualVetor",
+            "request": "launch",
+            "mainClass": "IgualVetor",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "MultiploVetor",
+            "request": "launch",
+            "mainClass": "MultiploVetor",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
+            "name": "MediaVetor",
+            "request": "launch",
+            "mainClass": "MediaVetor",
+            "projectName": "Projetos-java_2e2ed544"
+        },
+        {
+            "type": "java",
             "name": "VetorRandom",
             "request": "launch",
             "mainClass": "VetorRandom",
