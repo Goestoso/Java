@@ -1,4 +1,4 @@
-import java.math.BigInteger; //uma biblioteca matemática que lida com números grandes 
+import java.math.BigInteger; //Uma biblioteca matemática que lida com números grandes 
 import javax.swing.JOptionPane;
 //Calcular fatorial
 public class Fatorial {
