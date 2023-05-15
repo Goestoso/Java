@@ -1,5 +1,5 @@
 public class TestesLogicos {
-//Analisar as variações lógicas true - false
+//Analisar as variações lógicas true - false.
     public static void main(String[] args) {
         //Testes com a lógica de Boolean
         boolean p = true;
