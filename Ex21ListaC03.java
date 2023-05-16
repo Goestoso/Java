@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-import java.math.BigInteger; // É uma classe que representa um número inteiro arbitrariamente grande. Ao contrário do tipo int, que possui um tamanho fixo de 32 bits, ou do tipo long, que possui um tamanho fixo de 64 bits, o BigInteger não tem um tamanho fixo.
+import java.math.BigInteger; //É uma classe que representa um número inteiro arbitrariamente grande. Ao contrário do tipo int, que possui um tamanho fixo de 32 bits, ou do tipo long, que possui um tamanho fixo de 64 bits, o BigInteger não tem um tamanho fixo.
 
 //21. Faca um programa que receba dois numeros. Calcule e mostre: 
 //• a soma dos numeros pares desse intervalo de numeros, incluindo os numeros digitados;
