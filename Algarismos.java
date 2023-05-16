@@ -22,8 +22,8 @@ public class Algarismos {
         do { //laço para separar os algarismos do número
         int algarismo1 = numero % 10; // Separa a unidade
         int algarismo2 = numero / 10; // Operação para transformar número em dezena
-        int algarismo3 = algarismo2 % 10; // Separa a dezena
-        int algarismo4 = algarismo2 / 10; // Separa a centena
+        int algarismo3 = algarismo2 % 10; //Separa a dezena
+        int algarismo4 = algarismo2 / 10; //Separa a centena
         System.out.printf ("Algarismos do número %d \ncentena: %d \ndezena: %d \nunidade: %d" , numero, algarismo4, algarismo3, algarismo1);
         } while (numero < 0); // O comando será executado apenas uma vez
     }

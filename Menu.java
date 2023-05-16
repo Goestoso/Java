@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //Escreva o menu de opc¸oes abaixo. Leia a opcao do usuario e execute a operacao escolhida. Escreva uma mensagem de erro se a opcao for invalida.
-//Escolha a opcao:
+//Escolha a opção:
 //1- Soma de 2 numeros.
 //2- Diferenca entre 2 numeros (maior pelo menor).
 //3- Produto entre 2 numeros.

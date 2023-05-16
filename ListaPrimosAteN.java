@@ -1,11 +1,11 @@
 import java.util.Scanner;
-// Leia um número e informe quantos números primos existem até esse número
+// Leia um número e informe quantos números primos existem até esse número.
 public class ListaPrimosAteN {
     public static void main (String [] args){
         Scanner scanner = new Scanner (System.in);
 
         // Pedir ao usuário para digitar um número
-        System.out.print("Digite um número para verificar todos os primos até ele: ");
+        System.out.print("Digite um número para verificar todos os primos até n: ");
         int n = scanner.nextInt();
         scanner.close();
 

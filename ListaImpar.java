@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//Listar números ímpares até número informado
+//Listar números ímpares até número informado.
 public class ListaImpar {
     public static void main (String [] args) {
         Scanner scanner = new Scanner (System.in);

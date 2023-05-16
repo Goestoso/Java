@@ -9,6 +9,6 @@ public class ContagemRegressiva {
             numero--;
             Thread.sleep(1000);
         }
-        JOptionPane.showMessageDialog (null, "BOOOOOOM! 💣", "EXPLOSÃO: ", JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showMessageDialog (null, "BOOOOOOOM! 💣", "EXPLOSÃO: ", JOptionPane.WARNING_MESSAGE);
     }    
 }

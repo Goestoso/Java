@@ -1,11 +1,10 @@
 import java.util.Scanner;
-
 //14. Um programa que leia um numero inteiro positivo par N e imprima todos os numeros pares de 0 ate N em ordem decrescente.
 public class ListaPares {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Pedir ao usuário para digitar um número
-        System.out.print("\nInforme um número inteiro positivo: ");
+        System.out.print("\nInforme um número inteiro positivo : ");
         int n = scanner.nextInt();
         scanner.close();
         System.out.print ("\nLista dos números pares até " + n + ":\n");

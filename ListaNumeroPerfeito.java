@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-//Listar números perfeitos até o número informado pelo usuário
+//Listar números perfeitos até o número informado pelo usuário.
 public class ListaNumeroPerfeito {
     public static void main (String [] args) {
         // Lê um número inteiro digitado pelo usuário

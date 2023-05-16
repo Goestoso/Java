@@ -11,7 +11,7 @@ public class Harmonica {
         scanner.close(); //Fecha scanner
         double harmonica = 0.0; //Variável inicia com valor vazio para acumulação 
 
-        //Laço para percorrer todos os valores até n
+        // Laço para percorrer todos os valores até n
         for (double i = 1; i <= n; i++) {
             harmonica += 1 / i; 
             // Para acumular valores em uma variável, é necessário realizar a operação e atribuir o resultado novamente à mesma variável usando o operador de atribuição "+="

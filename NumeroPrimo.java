@@ -16,8 +16,7 @@ public class NumeroPrimo {
         // divisível
         for (int i = 2; i <= raiz && ePrimo; i++) {
             if (n % i == 0) {
-                // Se o número for divisível por um número diferente de 1 e ele mesmo, não é
-                // primo
+                // Se o número for divisível por um número diferente de 1 e ele mesmo, não é primo
                 ePrimo = false;
             }
         }

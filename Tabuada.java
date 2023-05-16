@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//Montar a tabuada do número inserido de 0 a 10
+//Montar a tabuada do número inserido de 0 a 10.
 public class Tabuada {
     public static void main (String [] args) {
         Scanner scanner = new Scanner (System.in);

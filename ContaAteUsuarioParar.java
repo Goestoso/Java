@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//Contar até usuário pedir para parar de contar
+//Contar até usuário pedir para parar de contar.
 public class ContaAteUsuarioParar {
     public static void main (String [] args) {
         char continua = 'c';
