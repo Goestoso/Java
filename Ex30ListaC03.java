@@ -44,13 +44,13 @@ public class Ex30ListaC03 {
         for (int i = 1; i <= 2 * n - 1; i += 2) {
             soma2 += i; // soma2 acumula com iteração de i += 2
             sequencia3.append(i); // Adicionar cada número à sequência 3
-            if (i < 2 * n - 1) { //Verirficar a condição da sequência
+            if (i < 2 * n - 1) { // Verirficar a condição da sequência
                 sequencia3.append(" + "); // Adicionar o sinal de "+" entre os números na sequência 3
             }
         }
         //Armazenar cáclulos na String
         String sequencias = "Primeira sequência: " + sequencia1.toString() + " = " + soma + "\n\nSegunda sequência: " + sequencia2.toString() + " = " + somadoida + "\n\nTerceira sequência: " + sequencia3.toString() + " = " + soma2;
         // Exibe as sequências na tela
-        JOptionPane.showMessageDialog(null, sequencias, "Sequências 🔢:", JOptionPane.PLAIN_MESSAGE);
+        JOptionPane.showMessageDialog(null, sequencias, "Sequências 🔢: ", JOptionPane.PLAIN_MESSAGE);
     }
 }
