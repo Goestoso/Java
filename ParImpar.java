@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//Descobrir se o número é par ou ímpar
+//Descobrir se o número é par ou ímpar.
 public class ParImpar {
 
     public static void main (String [] args) {
@@ -10,7 +10,7 @@ public class ParImpar {
         //processamento
         if (numero % 2 == 0) {
             //saída
-            System.out.println (numero + " é par");
+            System.out.println (numero + " é par ");
 
         }
         //processamento

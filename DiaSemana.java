@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-
+//Escolha de opção para mostrar mensagem referente a opção escolhida 
 public class DiaSemana {
     public static void main (String [] args){
         int dia = Integer.parseInt(

@@ -1,5 +1,5 @@
 import java.util.Scanner; 
-//Descobrir qual é o maior valor entre três números
+//Descobrir qual é o maior valor entre três números.
 public class MaiorDeTres {
     public static void main (String [] args) {
         //entrada
@@ -14,7 +14,7 @@ public class MaiorDeTres {
         //processamento
         if (v1 >= v2 && v1 >= v3) {
             //saída
-            System.out.println ("O maior valor e " + v1);
+            System.out.println ("O maior valor é " + v1);
         }
         //processamento
         else if (v2 >= v3) {

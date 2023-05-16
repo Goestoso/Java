@@ -22,7 +22,7 @@ public class MediaEscolar {
                 System.out.println (name + ", você está de recuperação! \n:'(");
             }
             else {
-                System.out.println ("Parabéns " + name + ", está aprovado! \n^_~");
+                System.out.println ("Parabéns " + name + ", está aprovado!  \n^_~");
             }
         }
         scanner.close();

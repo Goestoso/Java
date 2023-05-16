@@ -1,7 +1,7 @@
 import java.util.Scanner;
-//Scanner usa a classe System com método 
-//Exibir qual é o peso ideal baseado na altura e no gênero 
-//Usar a função if/else para separar os valores lógicos
+//Scanner usa a classe System com método scanner para leitura de dados .
+//Exibir qual é o peso ideal baseado na altura e no gênero .
+//Usar a função if/else para separar os valores lógicos.
 public class PesoIdeal {
 
     public static void main (String [] args) {

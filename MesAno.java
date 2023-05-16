@@ -10,7 +10,7 @@ public class MesAno {
         );
         switch (mes){
             case 1:
-                JOptionPane.showMessageDialog(null, "Janeiro 😎");
+                JOptionPane.showMessageDialog(null, "Janeiro 😎 ");
             break;
             case 2:
                 JOptionPane.showMessageDialog(null, "Fevereiro 😅");

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//Calcular o valor total da compra, se é a vista ou parcelado e aplicar o desconto 
+//Calcular o valor total da compra, se é a vista ou parcelado e aplicar o desconto. 
 public class ValorCompra {
     public static void main (String [] args){
         Scanner scanner = new Scanner (System.in);

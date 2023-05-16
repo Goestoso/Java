@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//Calcular a área do trapézio
 public class Trapezio {
     public static void main (String [] args) {
         Scanner scanner = new Scanner (System.in);
@@ -8,7 +8,7 @@ public class Trapezio {
         System.out.print ("Digite o valor da base menor: ");
         double bm = scanner.nextDouble();
         if (bM <= bm){
-            System.out.print ("A base maior não pode ser menor ou igual a base menor! (⊙_⊙;)");
+            System.out.print ("A base maior não pode ser menor ou igual a base menor!  (⊙_⊙;)");
         }
         else {
             System.out.print ("Digite o valor da altura: ");
