@@ -1,5 +1,5 @@
 import java.util.Scanner;
-// Faça um programa que leia um numero inteiro positivo ımpar N e imprima todos os numeros ımpares de 1 ate N em ordem crescente usando for
+//Faça um programa que leia um numero inteiro positivo ımpar N e imprima todos os numeros ımpares de 1 ate N em ordem crescente usando for
 public class Ex15Lista03For {
     public static void main (String args []) {
         Scanner scanner = new Scanner (System.in);
