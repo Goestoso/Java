@@ -1,2 +1,2 @@
 # Algorithms and Logic
-Studies about algorithms and programming logic
+Studies about algorithms and programming logic.
