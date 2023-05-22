@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "VetorEscalar",
+            "request": "launch",
+            "mainClass": "VetorEscalar",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
             "name": "IgualVetor",
             "request": "launch",
             "mainClass": "IgualVetor",
