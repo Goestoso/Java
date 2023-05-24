@@ -32,5 +32,6 @@ public class PrimoVetor {
                 System.out.print("\n" + (i + 1) + "º posição: " + v[i] + " ");
             }
         }
+        sc.close();
     }
 }
