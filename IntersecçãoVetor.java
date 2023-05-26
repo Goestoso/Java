@@ -19,15 +19,15 @@ public class IntersecçãoVetor {
         int t = 0;
         // Encontrar a intersecção
         for (int i = 0; i < 10; i++) {
-            boolean found = false;
-            for (int j = 0; j < 10 && !found; j++) {
+            boolean found = false; //Sentinela de verificação
+            for (int j = 0; j < 10 && !found; j++) { //Compara o v1 com o v2 para encontrar valores iguais
                 if (v1[i] == v2[j]) {
-                    found = true;
+                    found = true; // Se for encontrado valor igual 
                 }
             }
-            if (found) {
+            if (found) { //Se for encontrado o interseccao armazena o valor igual
                 interseccao[t] = v1[i];
-                t++;
+                t++; //variável t aumenta para aumentar o tamanho do interseccao
             }
         }
         // Criar vetor sem repetições
@@ -45,7 +45,7 @@ public class IntersecçãoVetor {
                 index++; //Aumenta o tamanho do vetor interseccaoSemRepeticoes a cada repetido = true
             }
         }
-
+        //Exibir resultados
         String intersec = " ";
         System.out.print("\n\nInterseção dos conjuntos (sem repetições): [");
         for (int i = 0; i < index; ++i) {          //String.valueOf converte qualquer valor para o formato string
