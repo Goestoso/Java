@@ -8,12 +8,12 @@ public class IntersecçãoVetor {
         int[] v1 = new int[10], v2 = new int[10], interseccao = new int[10];
         System.out.println("\nPrimeiro conjunto: ");
         for (int i = 0; i < 10; ++i) { // Primeiro vetor
-            v1[i] = r.nextInt(21);
+            v1[i] = r.nextInt(51);
             System.out.print("\n" + (i + 1) + "º valor: " + v1[i]);
         }
         System.out.print("\n\nSegundo conjunto: \n");
         for (int i = 0; i < 10; ++i) { // Segundo vetor
-            v2[i] = r.nextInt(21);
+            v2[i] = r.nextInt(51);
             System.out.print("\n" + (i + 1) + "º valor: " + v2[i]);
         }
         int t = 0;
@@ -50,7 +50,7 @@ public class IntersecçãoVetor {
         System.out.print("\n\nInterseção dos conjuntos (sem repetições): [");
         for (int i = 0; i < index; ++i) {          //String.valueOf converte qualquer valor para o formato string
             intersec = (i < index - 1) ? interseccaoSemRepeticoes[i] + ", " : String.valueOf(interseccaoSemRepeticoes[i]);
-            System.out.print(intersec);
+            System.out.print(intersec); //Ternário -> variável = (condição) ? verdadeiro : falso;
         }
         System.out.print ("]");
     }

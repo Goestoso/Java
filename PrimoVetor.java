@@ -9,12 +9,13 @@ public class PrimoVetor {
         int i, j;
         int cont = 0;
 
+        System.out.println ("\nVamos descobrir quais posições têm números primos: ");
         // Armazenar dez valores
         for (i = 0; i < 10; ++i) {
             System.out.print("\n " + ++cont + "º número: ");
             v[i] = sc.nextInt();
         }
-
+        System.out.println("\nNúmeros primos e suas respectivas posições: ");
         for (i = 0; i < 10; ++i) {
             boolean EPrimo = true;
             if (v[i] <= 1) { // Um número primo é > 1

@@ -13,27 +13,32 @@ public class SomaParImparVetor {
         System.out.println("Digite 6 números inteiros: ");
         int cont = 0;
         int somapar = 0, somaimpar = 0;
-        String par = " ", impar = " ";
+        String par = "[", impar = "[";
         while (cont < 6) { //Reeber os 6 números digitados
             System.out.print ((cont + 1) + "º valor: ");
             v[cont] = sc.nextInt();
             ++cont;
         }
+        cont = 0; //Reinicia o contador
         for (int i = 0; i < 6; ++i) { //Laço dos números pares
             if (v[i] % 2 == 0) {
-                 par += "\n" + v[i] + " "; //Concatenar os valores pares
+                 par += (i < 4) ? v[i] + ", " : String.valueOf(v[i]); //Concatenar os valores pares
                 somapar += v[i]; //Somar valores pares
+                ++cont;
             }
         }
+        cont = 0; //Reinicia o contador
         for (int i = 0; i < 6; ++i){ //Laço dos números ímpares
             if (v[i] % 2 !=0 ) {
-                impar += "\n" + v[i] + " "; //Concatenar os valores ímpares
+                impar += (i < 4) ? v[i] + ", " : String.valueOf(v[i]) ; //Concatenar os valores ímpares
                 somaimpar += v[i]; //Somar valores ímpares
+                ++cont;
             }
         }
-        System.out.print ("\nNúmeros pares: " + par);
+        //Exbir na tela os resultados
+        System.out.print ("\nNúmeros pares " + "(" + cont + ") : " + par + "]");
         System.out.print ("\nSoma dos números pares: " + somapar);
-        System.out.print("\n\nNúmeros ímpares: " + impar);
+        System.out.print("\n\nNúmeros ímpares " + "(" + cont + ") : " + impar + "]");
         System.out.print ("\nSoma dos números ímpares: " + somaimpar);
         sc.close();
     }
