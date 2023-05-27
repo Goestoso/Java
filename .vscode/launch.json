@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IntersecçãoVetor",
+            "request": "launch",
+            "mainClass": "IntersecçãoVetor",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "Calculadora",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "DiaSemana",
+            "request": "launch",
+            "mainClass": "DiaSemana",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
             "name": "VetorIntersecção",
             "request": "launch",
             "mainClass": "VetorIntersecção",
