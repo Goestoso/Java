@@ -6,6 +6,90 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SomaMultiploDeDois",
+            "request": "launch",
+            "mainClass": "SomaMultiploDeDois",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "MultiplicacaoMatrizes",
+            "request": "launch",
+            "mainClass": "MultiplicacaoMatrizes",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "MatrizTransposta",
+            "request": "launch",
+            "mainClass": "MatrizTransposta",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "AlunosDisciplina",
+            "request": "launch",
+            "mainClass": "AlunosDisciplina",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "SomaMultiploDeTres",
+            "request": "launch",
+            "mainClass": "SomaMultiploDeTres",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "MatrizDeterminante",
+            "request": "launch",
+            "mainClass": "MatrizDeterminante",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "MatrizInversa",
+            "request": "launch",
+            "mainClass": "MatrizInversa",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "BinomioNewton",
+            "request": "launch",
+            "mainClass": "BinomioNewton",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "CountMultiplesOfTwo",
+            "request": "launch",
+            "mainClass": "CountMultiplesOfTwo",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "MultiplesOfTwo",
+            "request": "launch",
+            "mainClass": "MultiplesOfTwo",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "MultiplesOfThree",
+            "request": "launch",
+            "mainClass": "MultiplesOfThree",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
+            "name": "QuadradoPerfeito",
+            "request": "launch",
+            "mainClass": "QuadradoPerfeito",
+            "projectName": "Logic_c1c1f27b"
+        },
+        {
+            "type": "java",
             "name": "IntersecçãoVetor",
             "request": "launch",
             "mainClass": "IntersecçãoVetor",
