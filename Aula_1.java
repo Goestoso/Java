@@ -1,5 +1,3 @@
-//Retomando os estudos da linguagem Java - agora na discplina de Linguagem de Programação //
-
 import java.util.Scanner;
 
 public class Aula_1 {
