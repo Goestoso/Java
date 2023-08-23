@@ -1,3 +1,5 @@
+//Sintaxe da linguagem Java
+
 import java.util.Scanner;
 
 public class Aula_1 {
