@@ -79,8 +79,9 @@ public class Test {
 - int → `.nextInt();` 
 - double → `.nextDouble();`
 - boolean → `.nextBoolean();`  
-- String → `.next();`
-- char → `.next().charAt(0);` 
+- String (word) → `.next();`
+- String (phrase) → `.nextLine();`
+- char → `.next().charAt(positionOfChar);` 
 
 <details>
   <summary>Import, instantiate and close</summary>
@@ -197,12 +198,22 @@ Increment (index) → `a = a + 1` equals to `a += 1` equals to `a++` or `++a`
 >} while (variableIndex <= 10);
 
 <h2>Array: </h2>
-<p>Arrays are lists, which are divided into vectors and matrices.</p>
+<p>Arrays are lists divided into vectors and matrices, which can contain objects, strings and primitive types (int, double, boolean)....</p>
 
 <h3>Vector</h3> 
 
+>To declare the vector:
+
 ```
 int vector[] = new int [numberOfPositions];
+```
+
+>To iterate through the vector elements:
+
+```
+for (int i = 0; i < numberOfPositions; ++i) {
+  vector [i] = i;
+}
 ```
 
 | 0 | 1 | 2 |
@@ -210,8 +221,23 @@ int vector[] = new int [numberOfPositions];
 
 <h3>Matrix</h3>
 
+>To declare the matrix:
+
 ```
 int matrix[][] = new int [numberOfPositionsInRow][numberOfPositionsInColumn];
+```
+
+>To iterate through the matrix elements:
+
+```
+for (int i = 0; i < numberOfPositionsInRow; ++i) {
+  for (int j = 0; j < [numberOfPositionsInColumn; ++j) {
+    if (i ==0)
+      vector [i][j] = i + j;
+    else
+      vector [i][j] = i;
+  }
+}
 ```
 
 | 0 | 1 | 2 | 3 |
@@ -220,4 +246,47 @@ int matrix[][] = new int [numberOfPositionsInRow][numberOfPositionsInColumn];
 | 2 | 2 | 2 | 2 |
 | 3 | 3 | 3 | 3 |
 
+<details>
+
+  <summary>Array curiosity</summary>
+
+<br>
+  
+>You can add more `[]` for multidimensional arrays...
+
+```
+int multiMatrix[][][] = new int [numberOfPositionsInRow][numberOfPositionsInColumn][DepthPositionNumber];
+```
+
+![Cubo](https://github.com/Goestoso/Java/assets/132786474/463a05a2-ec5a-4457-a69b-628b1f3761a4)
+
+* To iterate through the multiMatrix elements:
+
+```
+for (int i = 0; i < numberOfPositionsInRow; ++i) {
+  for (int j = 0; j < numberOfPositionsInColumn; ++j) {
+    for (int z = 0; z < DepthPositionNumber; ++z) {
+       multiMatrix[i][j][z] = i + j + k;  
+    }
+  }
+}
+```
+<br>
+
+>You can create an array (`Jagged Array`) that contains other arrays, where these inner arrays can be of different sizes.
+
+```
+int[][] jaggedArray = {
+    {1, 2, 3},
+    {4, 5},
+    {6, 7, 8, 9}
+};
+```
+
+| 1 | 2 | 3 |  |
+| ---- | ---- | ---- | ---- |
+| 4 | 5 | 
+| 6 | 7 | 8 | 9 |
+
+</details>
 
