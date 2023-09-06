@@ -83,4 +83,48 @@ System.out.printf("%s", name);
 System.out.println("First letter: " name.charAt(0));
 ```
 
+* `.substring()` returns a part of a string
+
+```
+String name = "Name Surname";
+int startIndex = 1, endIndex = 4;
+System.out.println(name.substring(startIndex));
+System.out.println(name.substring(startIndex, endIndex));
+```
+
+<details>
+
+<summary>More about String methods</summary>
+
+* `.indexOf()` returns the position of the 1st occurrence of a string or character
+
+```
+String name = "Name Surname";
+System.out.println(name.indexOf("me"));
+```
+
+* `.lastIndexOf()` returns the position of the last occurrence of a string or character
+
+```
+String name = "Name Surname";
+System.out.println(name.lastIndexOf("me"));
+```
+
+* `.startsWith()` checks if a string starts withother (returns true or false)
+
+```
+String name = "Name Surname";
+System.out.println(name.startsWith("me"));
+```
+
+* `.endsWith()` checks if a string ends withother (returns true or false)
+
+```
+String name = "Name Surname";
+System.out.println(name.endsWith("me"));
+```
+
+</details>
+
+
   
