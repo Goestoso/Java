@@ -31,6 +31,8 @@ public class AsteriscoString {
 		
 		System.out.println("Substituindo A/a por *: " + newPhrase + "\nQuantidade de substituições: " + index);
 		System.out.println("Substituindo A/a por * (StringBuffer): " + novaFrase);
+
+		sc.close();
 	}
 	
 	private static String FraseAsterisco (String frase) { //função para substituir os caracteres
