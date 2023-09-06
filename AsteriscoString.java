@@ -37,7 +37,7 @@ public class AsteriscoString {
 	
 	private static String FraseAsterisco (String frase) { //função para substituir os caracteres
 		
-		StringBuffer novaFrase =  new StringBuffer();
+		StringBuffer novaFrase =  new StringBuffer(); //instanciando o construtor StringBuffer
 		
 		for (int i = 0; i < frase.length(); ++i) {
 				
