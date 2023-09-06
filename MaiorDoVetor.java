@@ -39,5 +39,7 @@ public class MaiorDoVetor {
 		}
 		
 		System.out.println("\nO maior valor é o Vetor [" + p + "]: " + var);
+
+		sc.close();
 	}
 }

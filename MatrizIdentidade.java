@@ -61,5 +61,8 @@ public class MatrizIdentidade {
 			else 
 				
 				System.out.println("\nNão é Matriz Identidade! :^(");
+
+		
+		sc.close();
 	}
 }

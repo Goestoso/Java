@@ -5,7 +5,6 @@ public class Cubo {
 	public static void main (String[] args) {
 		
 		int cubo[][][] = new int [3][3][3];
-		boolean dimensao = true;
 		int index = 1;
 		
 		System.out.print("Matriz de 3 dimensoes: \n");
