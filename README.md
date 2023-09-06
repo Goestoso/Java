@@ -124,7 +124,50 @@ String name = "Name Surname";
 System.out.println(name.endsWith("me"));
 ```
 
+* `.toCharArray()` returns a new character array that contains all the characters in the string in the same order they appear in the original string.
+
+```
+String name = "Name Surname";
+char[] array = name.toCharArray();
+```
+
 </details>
+
+<h2>StringBuffer</h2>
+
+It is a mutable object, that is, itsvalue can be changed, it means the valuestored in your instance can be changed.
+
+> To create an instance of StringBuffer it is necessaryuse your builder:
+
+```
+StringBuffer str = new StringBuffer();
+```
+
+<h3>.append()</h3>
+
+When we need to add more content to the end ofan object of this class.
+
+```
+StringBuffer str = new StringBuffer("Name ");
+str.append("Surname ");
+str.append(10);
+char array[] = "With builder ".toCharArray();
+str.append(array, 4, 11);
+System.out.println(str);
+```
+
+<h3>.insert()</h3>
+
+Allows you to enter values ​​into any position of a StringBuffer
+
+```
+StringBuffer strBuffer = new StringBuffer("Name ");
+int offSet = 0;
+String value = "Surname ";
+strBuffer.insert(offSet, value);
+System.out.println(strBuffer);
+```
+
 
 
   
