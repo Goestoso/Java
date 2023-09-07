@@ -168,6 +168,38 @@ strBuffer.insert(offSet, value);
 System.out.println(strBuffer);
 ```
 
+<h3>.replace() and .setCharAt()</h3>
 
+To replace one character with another or one sequence of characters by another in aStringBuffer
 
+```
+StringBuffer strBuffer = new StringBuffer("name Buffer ");
+int start = 4, end = 10, offSet = 0;
+String value = "Surname ";
+strBuffer.replace(start, end, value);
+strBuffer.setCharAt(offSet, 'N');
+System.out.println(strBuffer);
+```
+
+<h3>.delete()</h3>
+
+To delete a character or string of characters from a StringBuffer
+
+```
+StringBuffer strBuffer = new StringBuffer("Name Buffer ");
+int start = 4, end = 10, offSet = 0;
+strBuffer.delete(start, end);
+strBuffer.deleteCharAt(offSet);
+System.out.println(strBuffer);
+```
+
+<h3>.reverse()</h3>
+
+To reverse the character sequence of a StringBuffer
+
+```
+StringBuffer str = new StringBuffer("Name");
+str.reverse();
+System.out.print(str);
+```
   
