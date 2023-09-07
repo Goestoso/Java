@@ -340,5 +340,13 @@ public class Example {
 
 ```
 
+<details>
+
+<summary>More about passing parameters</summary>
+
+* The `object reference`, as object, will always point to the same object throughout that object's lifecycle.
+* You can `modify the state of this object`, that is, its fields and properties, using this reference, but you cannot make the object reference point to a completely different object.
+ 
+</details>
 
   
