@@ -23,5 +23,6 @@ public class VetorMulti {
 			System.out.println("Vetor Multiplicado[" + i + "]" + ": " + v[i]);
 		
 		}
+		s.close();
 	}
 }

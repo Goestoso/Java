@@ -31,9 +31,7 @@ public class TransferirValorVetor {
 				
 		}
 		
-		do {
-			
-			boolean b = true;
+		do {			
 			
 			System.out.println("");
 			

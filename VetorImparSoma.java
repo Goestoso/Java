@@ -33,5 +33,7 @@ public class VetorImparSoma {
 		}
 		
 		System.out.println("\nA soma dos vetores ímpares é igual a " + soma);
+
+		sc.close();
 	}
 }
