@@ -11,6 +11,8 @@ public class VerificaValor {
 		System.out.print("\nDigite um valor: ");
 		int n = sc.nextInt();
 		verificaValor(n);
+
+		sc.close();
 			
 	}
 	
