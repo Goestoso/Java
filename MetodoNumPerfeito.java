@@ -7,7 +7,7 @@ public class MetodoNumPerfeito {
         
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("\nDigite um número: ");
+        System.out.print("\nDigite um número natural: ");
         int n = sc.nextInt();
 
         System.out.println("\nVamos verificar se ele é perfeito (ele deve ser igual a soma dos seus divisores)...");
@@ -32,19 +32,19 @@ public class MetodoNumPerfeito {
             }
         }
 
-        int lastIndex = str.lastIndexOf("+");
-        str.deleteCharAt(lastIndex);
-        lastIndex = str.lastIndexOf(" ");
-        str.deleteCharAt(lastIndex);
-        int index = str.length();
+        int lastIndex = str.lastIndexOf("+"); //recupera o index do último +
+        str.deleteCharAt(lastIndex); //deleta o último +
+        lastIndex = str.lastIndexOf(" "); //recupera o index do último ' '
+        str.deleteCharAt(lastIndex); //deleta o último espaço
+        int index = str.length(); //recupera o comprimento da string
 
         if (perfeito == valor) {
-            str.insert(index-1, " = " + valor);
+            str.insert(index-1, " = " + valor); //insere um =
             System.out.println("\n" + str);
             return true;
         }
         else {
-            str.insert(index-1, " != " + valor);
+            str.insert(index-1, " != " + valor); // insere um !=
             System.out.println("\n" + str);
             return false;
         }
