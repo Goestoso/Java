@@ -189,7 +189,17 @@ Increment (index) → `a = a + 1` equals to `a += 1` equals to `a++` or `++a`
 >    //looping if conditional stays true<br>
 >}
 
+<h3>for-each</h3>
+
+* for-each is used to iterate through two elements of a collection, such as an array or a list, without the need to use explicit indices.
+
+>for (typeOfElement element : array) { <br>
+>    // Code <br>
+>}
+
 <h3>do...while</h3>
+
+* do-while always does at least one iteration before ending the loop.
 
 >int variableIndex = 0; <br>
 >do {<br>
