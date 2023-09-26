@@ -92,6 +92,15 @@ System.out.println(name.substring(startIndex));
 System.out.println(name.substring(startIndex, endIndex));
 ```
 
+* `.replace()` replaces all declared occurrences, `.replaceAll()` works with strings and allows the use of regular expressions to find and replace more flexible and complex text patterns.
+
+```
+String text = "Hello, world!";
+String replaceString = text.replace("world", "friend"); // Returns "Hello, world!"
+String text = "banana123";
+String replaceString = text.replaceAll("\\d", "X"); // Returns "bananaXXX"
+```
+
 <details>
 
 <summary>More about String methods</summary>
