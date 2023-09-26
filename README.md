@@ -169,10 +169,10 @@ Here we can use Boolean logic (like true or false), considering numbers, charact
 >}
 
 
-<h3>Ternary</h3>
+<h3>ternary</h3>
 
 >(boolean conditional) ? value case true : value case false; <br>
->int age = sc.nextInt() <br>
+>int age = sc.nextInt(); <br>
 >String message = (age >= 21) ? "Adult" : "Young"; 
 
 <h2>Loop: </h2>
