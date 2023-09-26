@@ -96,28 +96,28 @@ System.out.println(name.substring(startIndex, endIndex));
 
 <summary>More about String methods</summary>
 
-* `.indexOf()` returns the position of the 1st occurrence of a string or character
+* `.indexOf()` returns the position of the 1st occurrence of a string or character.
 
 ```
 String name = "Name Surname";
 System.out.println(name.indexOf("me"));
 ```
 
-* `.lastIndexOf()` returns the position of the last occurrence of a string or character
+* `.lastIndexOf()` returns the position of the last occurrence of a string or character.
 
 ```
 String name = "Name Surname";
 System.out.println(name.lastIndexOf("me"));
 ```
 
-* `.startsWith()` checks if a string starts withother (returns true or false)
+* `.startsWith()` checks if a string starts withother (returns true or false).
 
 ```
 String name = "Name Surname";
 System.out.println(name.startsWith("me"));
 ```
 
-* `.endsWith()` checks if a string ends withother (returns true or false)
+* `.endsWith()` checks if a string ends withother (returns true or false).
 
 ```
 String name = "Name Surname";
@@ -129,6 +129,12 @@ System.out.println(name.endsWith("me"));
 ```
 String name = "Name Surname";
 char[] array = name.toCharArray();
+```
+
+* `.split()` separates a string into multiple substrings based on a specified delimiter.
+
+```
+String[] word = phrase.split(String regex);
 ```
 
 </details>
