@@ -364,4 +364,27 @@ public class Example {
  
 </details>
 
+<h2>Exceptions</h2>
+
+An exception in java is an object that describes an exceptional condition (`error`).
+
+> It is managed by five keywords: `try`, `catch`, `throws`, `throw` and `finnally`.
+
+* `try` → instructions that will be monitored must be inside a `try{}` block
+* `catch` → if an exception occurs inside the `try{}` block, it can be handled by the `catch(Exception e) {}` clause
+* `throws` → any exception that is passed on by a method must make this explicit by `throws Exception` in the method signature (after psvm(String args))
+* `throw` → to generate an exception manually, use `throw Exception()` (if it is a new exception, use `new throw Exception()`)
+* `finally` → instruction `finally{}` that must be executed after the `try {}`, it is necessarily executed at the end of exception handling, regardless of whether there is a return
+
+```
+try {
+   //code monitoring
+} catch (ExceptionType1 exOb) {
+  //exception handling 
+} finally {
+  //executed at the end of the try
+}
+
+```
+
   
