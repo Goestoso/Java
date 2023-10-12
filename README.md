@@ -81,7 +81,7 @@ public class Test {
 - boolean → `.nextBoolean();`  
 - String (word) → `.next();`
 - String (phrase) → `.nextLine();`
-- char → `.next().charAt(positionOfChar);` 
+- char → `.next().charAt(positionOfChar);`
 
 <details>
   <summary>Import, instantiate and close</summary>
@@ -103,6 +103,20 @@ Scanner scanner = new Scanner (System.in);
 ```
 scanner.close();
 ```
+
+</details>
+
+<details>
+
+<summary>Some interesting methods of Scanner</summary>
+
+- `.nextLine()` → moves the reading cursor to the next line. This effectively "clears" the buffer from the previous line, allowing you to start reading the next line cleanly.
+
+- `.hasNext()` → checks whether there are still tokens (strings) to read from the input.
+
+- `.hasNextInt()` → checks whether the next token is an integer.
+
+- `.hasNextDouble()` →  checks whether the next token is a floating point number.
 
 </details>
 
