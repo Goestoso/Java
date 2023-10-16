@@ -474,6 +474,8 @@ public class MyException extends Exception {
 
 ```
 
+* `extends`: it is used for a class to inherit characteristics from a superclass.
+
 <h4>Second step:</h4>
 
 > Create a `constructor` for your custom exception class. Typically, you must provide an error message that describes the exception. You can call the constructor of the parent class (superclass) and pass the error message to it.
@@ -483,6 +485,8 @@ public MinhaExcecao(String mensagem) {
     super(mensagem);
 }
 ```
+
+* `super`: it accesses constructors, methods and attributes of the superclass when they have the same name in the subclass.
 
 <h4>Third step:</h4>
 
@@ -514,3 +518,166 @@ try {
 }
 ```
 
+<h2>Classes</h2>
+
+A `class` is a model or a plan for creating objects. 
+
+* To declare a `class` with its attributes and methods:
+
+> access-qualifier class Name { <br>
+> / * ... list of attributes if necessary */ <br>
+> access-qualifier attribute-data-type attributeName;
+
+> access-qualifier return-type MethodName(parameters) { <br>
+> / * method body * / <br>
+> } <br>
+> / * ... put as many methods as necessary. <br>
+}
+
+* Example: a class that contains three attributes corresponding to important data and a method for printing them.
+
+<h4>attributes</h4>
+
+```
+/NameProudct.java file/
+
+public class ProductName {
+  public int codProd;
+  public String descriptionProd;
+  public double priceProd;
+```
+
+###
+
+<h4>method</h4>
+
+```
+public void printProduct() {
+  System.out.println("Code " + this.codProd);
+  System.out.println("Description " + this.descriptionProd);
+  System.out.println("Price " + this.priceProd);
+ }
+}
+```
+
+* `this`: refers to the current instance of the object. It can be used to access instance variables, instance methods, and constructors of the class itself.
+
+<h3>Objects</h3>
+
+<h4>🛠️ Creating an object: </h4> 
+
+→ A `variable` in Java is used to store the object.
+
+
+→ To access an attribute or method, `notations such as registration` are used.
+
+→ It is necessary to create an object to be able to `access its attributes`.
+
+* `new`: used to create a new instance of an object.
+> ClassName object = new NameClass();
+
+* `(.)`: dot in java is used to access members of an object.
+> object.methodClass();
+
+<h4>public classes ❌ public static classes</h4>
+
+* `public class`:
+  
+→ A class declared as `public` is accessible from any class in any package.
+
+→ Typically, you declare `non-static main classes (that is, classes that are not internal)` with public so that they can be used by other classes in different packages.
+
+```
+public class MyClass {
+    // Contents
+}
+
+```
+
+* `public static class`:
+
+→ A class declared as public static is `a static inner class` that can be accessed directly by the name of the outer class, without the need to create an instance of the outer class.
+
+→ This class is useful when you want to group inner classes with a scope limited to the outer class while maintaining the ability to `easily access them from other parts of the code`.
+
+```
+public class MyExternalClass {
+    public static class MyInnerClass {
+        // Inner class content
+    }
+}
+
+```
+
+> Generally, you use `static inner classes` when you want to `group classes that are related to the outer class`, or when the static inner class `can be used by other parts of the code` but does not need an instance of the outer class to be accessed.
+
+<h3>Constructor</h3>
+
+It is used to create an instance of a class (an object). We can define our own constructors and make class attributes with `private`.
+
+* `private`: used to declare that an object can only be accessed within the class itself.
+
+> A constructor has no return type, has the same name as the class and can have parameters.
+
+```
+public Person (String nm, String id) {
+  name = nm;
+  identifier = id;
+}
+```
+
+<h4>🛠️ Types of Constructors: </h4>
+
+→ `Parameterless constructor`: creates an object with values ​​specified in the constructor body, not allowing the user to pass parameters to the constructor.
+
+→ `Constructor with parameter`: creates an object with specified values ​​by passing parameters.
+
+→ `Copy constructor`: generates a copy of another object.
+
+<h4>📃Rules: </h4>
+
+- a constructor never returns anything, it has `no return type`;
+
+- always has the `same class name` (mandatory);
+
+- must always be public;
+
+- is called to instantiate an object;
+
+- is NEVER of the `abstract` type.
+
+<details>
+
+<summary>abstract</summary>
+
+- `abstratct`: declares a class or method as abstract, which means `it cannot be instantiated (in the case of classes)` or cannot be implemented in the current class, `leaving implementation to subclasses (in the case of methods)`.
+- `@Override`: annotation that makes method substitution explicit, when one class extends another (such as abstract ones).
+ 
+</details>
+
+<h2>👑 Heritage, 🔀 Polymorphism and 🔓 Encapsulation</h2>
+
+- The ability to create a new class (subclass) based on an existing class (superclass) is called `inheritance`.
+- The `subclass` inherits the attributes and methods of the `superclass`.
+- The condition that objects from different classes respond to the same method differently is `polymorphism`.
+- The concept of hiding internal details of a class is` encapsulation`.
+- `Access methods (Getters and Setters)`: to allow controlled access to attributes, it is ideal to create `"get" (access)` and `"set" (change)` for these attributes.
+
+<details>
+
+<summary>import and package</summary>
+
+- `import`: imports classes from other packages.
+
+```
+import with.example.otherpackage.OtherClass;
+```
+
+- `package`: organizes classes into packages.
+
+```
+package with.example.mypackage;
+
+```
+ 
+</details>
