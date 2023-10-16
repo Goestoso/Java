@@ -658,10 +658,82 @@ public Person (String nm, String id) {
 <h2>👑 Heritage, 🔀 Polymorphism and 🔓 Encapsulation</h2>
 
 - The ability to create a new class (subclass) based on an existing class (superclass) is called `inheritance`.
-- The `subclass` inherits the attributes and methods of the `superclass`.
-- The condition that objects from different classes respond to the same method differently is `polymorphism`.
+
+```
+class Animal {
+    String name;
+
+    void sound() {
+        System.out.println("Some animals make noises.");
+    }
+}
+
+class Dog extends Animal {
+    Dog(String name) {
+        this.name = name;
+    }
+
+    void sound() {
+        System.out.println(name + " makes the sound: Woo wow!");
+    }
+}
+
+class Cat extends Animal {
+    Gato(String name) {
+        this.name = name;
+    }
+
+    void sound() {
+        System.out.println(name + " makes the sound: Meow!");
+    }
+}
+
+public class InheritanceExample {
+    public static void main(String[] args) {
+        Dog rex = new Dog("Rex");
+        Cat whiskers = new Cat("Whiskers");
+
+        rex.sound();       // Outputs: Rex makes the sound: Woo wow!
+        whiskers.sound();  // Outputs: Whiskers makes the sound: Meow!
+    }
+}
+
+```
+
+> The `subclass` inherits the attributes and methods of the `superclass` and the condition that objects from different classes respond to the same method differently is `polymorphism`.
+
 - The concept of hiding internal details of a class is` encapsulation`.
-- `Access methods (Getters and Setters)`: to allow controlled access to attributes, it is ideal to create `"get" (access)` and `"set" (change)` for these attributes.
+
+```
+class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+
+public class EncapsulationExample {
+    public static void main(String[] args) {
+        Pessoa pessoa = new Pessoa("Alice", 30);
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
+    }
+}
+
+```
+
+> `Access methods (Getters and Setters)`: to allow controlled access to attributes, it is ideal to create `"get" (access)` and `"set" (change)` for these attributes.
 
 <details>
 
