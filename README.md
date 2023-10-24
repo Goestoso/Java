@@ -704,36 +704,77 @@ public class InheritanceExample {
 
 - The concept of hiding internal details of a class is` encapsulation`.
 
+> Accessor Method: reads the value of an attribute (Started by `get`);
+
+> Mutator (or Modifier) ​​Method: modifies the value of a attribute (Started by `set`);
+
+> Worker Method: are linked to more “robust” methods who generally perform more specific tasks. Tip: `use infinitive` (can be of void or primitive type, such as boolean). Ex: print, change;
+
 ```
 class Person {
-    private String name;
+    private String name; //attributes
     private int age;
 
-    public Person(String name, int age) {
+    public Person(String name, int age) { //builder
         this.name = name;
         this.age = age;
     }
 
-    public String getName() {
+    public String getName() { //getter
         return name;
     }
 
-    public int getAge() {
+    public int getAge() { //getter
         return age;
     }
+
+     public void setName(String n) { //setter
+
+  	 name = n;
+     }
+
+      public void setAge (int a) {  //setter
+
+          age = a;
+      }
+
+       public boolean verifyAge () { //worker
+
+           boolean valid;
+
+           if (age < 21)
+
+              valid = false;
+
+           else
+
+               valid = true;
+
+           return valid; 
+       }
+	
 }
 
 public class EncapsulationExample {
     public static void main(String[] args) {
-        Pessoa pessoa = new Pessoa("Alice", 30);
+        Person person = new Person("Alice", 30);
         System.out.println("Name: " + person.getName());
         System.out.println("Age: " + person.getAge());
+        System.out.println(person.verifyAge == true ? "This person can drink alcohol" : "This person can't drink alcohol");
+        String newPerson = "Gabriel";
+        person.setName(newPerson);
+        int newAge = 19;
+        person.setAge(newAge);
+        System.out.println("New name: " + person.getName());
+        System.out.println("New age: " + person.getAge());
+        System.out.println(person.verifyAge == true ? "This person can drink alcohol" : "This person can't drink alcohol");
+        
     }
 }
 
 ```
 
-> `Access methods (Getters and Setters)`: to allow controlled access to attributes, it is ideal to create `"get" (access)` and `"set" (change)` for these attributes.
+> `Access methods (Getters, Setters and Workers)`: to allow controlled access to attributes, it is ideal to create `"get" (access)`, `"set" (change)` and `"infinitive" (print, verify...)` for these attributes.
 
 <details>
 
