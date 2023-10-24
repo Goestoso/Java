@@ -728,12 +728,12 @@ class Person {
         return age;
     }
 
-     public String setName(String n) { //setter
+     public void setName(String n) { //setter
 
   	 name = n;
      }
 
-      public int setAge (int a) {  //setter
+      public void setAge (int a) {  //setter
 
           age = a;
       }
