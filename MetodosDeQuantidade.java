@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class QuantidadeMetodos {
+public class MetodosDeQuantidade {
     
     public static int metodoQuantidadePositiva(Scanner sc) { 
 
@@ -23,7 +23,7 @@ public class QuantidadeMetodos {
 
                 } else if (qtd < 0) {
 
-                    throw new NegativeQuantityException("não pode quantidade negativa :) ");
+                    throw new QuantidadeNegativaException("não pode quantidade negativa :) ");
 
                 }
 
@@ -75,7 +75,7 @@ public class QuantidadeMetodos {
 
                 sc.nextLine(); // Limpa o Buffer
 
-            } catch (NegativeQuantityException e) {
+            } catch (QuantidadeNegativaException e) {
 
                 System.err.println("\nErro: " + e.getMessage());
             }
@@ -265,7 +265,6 @@ public class QuantidadeMetodos {
                 System.out.println();
 
                 System.err.println("Erro: " + e.getMessage());
-                ;
 
             }
 
@@ -289,7 +288,7 @@ public class QuantidadeMetodos {
 
                 if (value < 0) {
 
-                    throw new NegativeQuantityException("não pode quantidade negativa :) ");
+                    throw new QuantidadeNegativaException("não pode quantidade negativa :) ");
 
                 } else {
 
@@ -297,7 +296,7 @@ public class QuantidadeMetodos {
 
                 }
 
-            } catch (NegativeQuantityException e) {
+            } catch (QuantidadeNegativaException e) {
 
                 System.err.println("Erro! " + e);
 

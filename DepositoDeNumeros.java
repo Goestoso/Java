@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class DepositoDeNumeros {
 
-    public static void main(String[] args) throws NegativeQuantityException {
+    public static void main(String[] args) throws QuantidadeNegativaException {
 
         Scanner sc = new Scanner(System.in);
 
@@ -18,9 +18,9 @@ public class DepositoDeNumeros {
 
         try {
 
-            qtd = QuantidadeMetodos.metodoQuantidadePositiva(sc);
+            qtd = MetodosDeQuantidade.metodoQuantidadePositiva(sc);
 
-            t = QuantidadeMetodos.metodoTamanho(sc);
+            t = MetodosDeQuantidade.metodoTamanho(sc);
 
         } catch (RuntimeException e) {
 
@@ -50,13 +50,13 @@ public class DepositoDeNumeros {
 
                 System.out.println();
 
-                n = QuantidadeMetodos.metodoPosicaoVetor(sc, t, index);
+                n = MetodosDeQuantidade.metodoPosicaoVetor(sc, t, index);
 
                 index[i] = n;
 
                 ++i;
 
-                v[n] = QuantidadeMetodos.metodoValorVetor(sc,n);
+                v[n] = MetodosDeQuantidade.metodoValorVetor(sc, n);
 
                 value = v[n];
 
@@ -90,8 +90,10 @@ public class DepositoDeNumeros {
 
             v[n] = total;
 
-            System.out.print((value == total) ? "" : "\nVocê digitou um valor que supera a sua quantidade total, portanto, os números que sobraram serão alocados para a caixinha nº " + 
-                               + (n + 1)  + "\n\nVocê tinha no total: " + total + "\n");
+            System.out.print((value == total) ? ""
+                    : "\nVocê digitou um valor que supera a sua quantidade total, portanto, os números que sobraram serão alocados para a caixinha nº "
+                            +
+                            +(n + 1) + "\n\nVocê tinha no total: " + total + "\n");
 
             System.out.println("\nSuas caixinhas:\n");
 
@@ -112,11 +114,9 @@ public class DepositoDeNumeros {
                         "\nVocê digitou um valor que supera a sua quantidade total, portanto, os números que sobraram serão alocados para a caixinha nº "
                                 + (n + 1) + ".");
 
-                System.out.print("\nVocê ficou com: " + (qtd * 0) + "\n");
-
-                System.out.println("\nATENÇÃO | ! |");
-
-                System.out.println("\nTodas as suas caixinhas já foram usadas!");
+                System.out.print("\nVocê ficou com: " + (qtd * 0) + "\n" //
+                        + "\nATENÇÃO | ! |\n" //
+                        + "Todas as suas caixinhas já foram usadas!");
 
                 int total = value - (-qtd);
 
@@ -131,13 +131,10 @@ public class DepositoDeNumeros {
 
             } else {
 
-                System.out.println("\nATENÇÃO | ! |");
-
-                System.out.println("\nTodas as suas caixinhas já foram usadas!");
-
-                System.out.println("\nVocê ficou com: " + qtd);
-
-                System.out.println("\nAqui estão as suas caixinhas: \n");
+                System.out.println("\nATENÇÃO | ! |" //
+                        + "\nTodas as suas caixinhas já foram usadas!\n" //
+                        + "Você ficou com: " //
+                        + qtd + "\nAqui estão as suas caixinhas: \n");
 
                 for (int element : v) {
 
