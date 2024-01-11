@@ -25,13 +25,13 @@ WindowBuilder is a visual design tool for creating graphical user interfaces (GU
 
 <h3>Layouts</h3>
 
-🧱 It makes manipulating layouts easy, allowing you to choose and adjust layouts visually to achieve the design you want.
+🧱 It makes manipulating layouts easy, allowing you to `choose and adjust layouts visually` to achieve the design you want.
 
 ![image-23](https://github.com/Goestoso/Java/assets/132786474/09fd5878-abd0-49b5-a8be-6c9dd1d4e76c)
 
 <h3>Code</h3>
 
-🧑‍💻 WindowBuilder automatically generates code corresponding to the graphical interface you designed. 
+🧑‍💻 WindowBuilder `automatically generates code` corresponding to the graphical interface you designed. 
 
 ```
 package view;
