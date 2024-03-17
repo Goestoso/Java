@@ -130,7 +130,7 @@ void method (int a, int b, String c){}
 
 ```
 public class Box<G> {
-    private T content;
+    private G content;
 
     // Builder
     public Box(G content) {
