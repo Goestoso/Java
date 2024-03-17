@@ -354,7 +354,7 @@ public class LinkedList<T> {
 
 ```
 public class LinkedList<L> {
-private Node<T> tail; //To store a reference to the last node in the list
+    private Node<T> tail; //To store a reference to the last node in the list
 
     public void insertAtEnd(T data) {
         Node<L> newNode = new Node<>(data); // Creates a new node with the specified value
