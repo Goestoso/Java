@@ -227,6 +227,6 @@ public class SelectionSort {
 - Each box represents a _node_ in the linked list.
 - Each node has a ___data field___ (_Data_) to store information and a ___pointer___ (_Next_) that points to the next node in the list.
 - Typically, in a linked list _there are one or two known access points_: the ___first___ and the ___last___.
-- The last node in the list has its Next pointer pointing to ___null___, indicating the _end_ of the list.
+- The _last node_ in the list has its Next pointer pointing to ___null___, indicating the _end_ of the list.
 
 > 🔗 Linked lists provide a flexible and efficient way to ___organize___ and ___navigate___ through sequences of elements.
