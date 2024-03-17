@@ -127,3 +127,106 @@ void method (int a, int b){}
 void method (int a, int b, String c){}
 ```
 
+<h2>Elementary Sorting Methods</h2>
+
+→ They are simple and straightforward algorithms designed to order collections of elements, such as arrays, lists, or sequences.
+
+```
++----------+      +-------------+      +-------------+
+|BubbleSort| ---- |InsertionSort| ---- |SelectionSort| =====> by comparison!
++----------+      +-------------+      +-------------+
+
+```
+
+> Overall performance of the algorithms is quadratic time: ___(n² - n) / 2___
+
+<h3>Bubble Sort </h3>
+
+→ This method compares adjacent pairs of elements and swaps them if they are in the wrong order, repeating this process until the list is sorted. 
+
+```
+public class BubbleSort {
+    public static void bubbleSort(int[] array) {
+        int n = array.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    // change the elements
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+```
+
+<h3>Insertion Sort</h3>
+
+→ In this method, the elements are traversed one by one and inserted into the correct position in the already ordered part of the array. 
+
+- It's efficient for small lists or when the list is almost ordered.
+
+```
+public class InsertionSort {
+    public static void insertionSort(int[] array) {
+        int n = array.length;
+        for (int i = 1; i < n; ++i) {
+            int key = array[i];
+            int j = i - 1;
+            //Moves the array elements[0..i-1], which are larger than key,
+            //to a position ahead of your current position
+            while (j >= 0 && array[j] > key) {
+                array[j + 1] = array[j];
+                j = j - 1;
+            }
+            array[j + 1] = key;
+        }
+    }
+```
+
+<h3>Selection Sort</h3>
+
+→ This method finds the smallest element in the list and places it in the first position, then finds the second smallest element and places it in the second position, and so on, until the list is sorted. 
+
+```
+public class SelectionSort {
+    public static void selectionSort(int[] array) {
+        int n = array.length;
+        for (int i = 0; i < n - 1; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < n; j++) {
+                if (array[j] < array[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            // Swaps the minimum element found with the first unordered element
+            int temp = array[minIndex];
+            array[minIndex] = array[i];
+            array[i] = temp;
+        }
+    }
+```
+
+<h2>Linked lists</h2>
+
+→ Structures that correspond to a sequence of inputs or `nodes`.
+
+> The `node`:
+
+```
+ ↪ +--------+     +--------+     +--------+     +--------+
+    | Node  |      | Node  |      | Node  |      | Node  |
+    +-------+      +-------+      +-------+      +-------+
+    |  Data |      |  Data |      |  Data |      |  Data |
+    +-------+      +-------+      +-------+      +-------+
+    |  Next |----->|  Next |----->|  Next |----->|  Next |-----> null
+    +-------+      +-------+      +-------+      +-------+
+```
+- Each box represents a _node_ in the linked list.
+- Each node has a ___data field___ (_Data_) to store information and a ___pointer___ (_Next_) that points to the next node in the list.
+- Typically, in a linked list _there are one or two known access points_: the ___first___ and the ___last___.
+- The last node in the list has its Next pointer pointing to ___null___, indicating the _end_ of the list.
+
+> 🔗 Linked lists provide a flexible and efficient way to ___organize___ and ___navigate___ through sequences of elements.
