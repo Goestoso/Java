@@ -394,7 +394,7 @@ public class LinkedList<L> {
 }
 ```
 
-> What happens (in both _ending cases_) :
+> What happens (_in both ending cases_) :
 
 ```
 BEFORE
