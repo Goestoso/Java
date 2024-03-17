@@ -365,6 +365,6 @@ public class LinkedList<L> {
                tail.setNext(newNode); // Sets the next node of the current tail as the new node
                tail = newNode; // Updates the tail to the new node
            }
-       }
+    }
 }
 ```
