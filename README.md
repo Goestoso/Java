@@ -126,6 +126,43 @@ public class Dog extends Animal { //extends to declare that the class is inherit
 void method (int a, int b){}
 void method (int a, int b, String c){}
 ```
+- `generics:` it's a concept in programming that allows us to write code that can operate with different types of data, in a generic way. 
+
+```
+public class Box<G> {
+    private T content;
+
+    // Builder
+    public Box(G content) {
+        this.content = content;
+    }
+
+    // Method to get the contents of the box
+    public G getContent() {
+        return content;
+    }
+
+    // Method for Printing the Contents of the Box
+    public void printContent() {
+        System.out.println("Contents of the Box: " + content);
+    }
+
+```
+
+<details>
+
+<summary>(<>)</summary>
+
+- `<>` -> also known as "diamond operator" in Java, are used to indicate the use of ___generics___. They are used in declarations of classes, interfaces, methods, and constructors to specify a _generic type_.
+  
+- When you create a generic class instance, you can specify the type of data you want to use within the class using `<>`, such as this example:
+
+```
+Box<Integer> integerBox = new Box<>();
+
+```
+  
+</details>
 
 <h2>Elementary Sorting Methods</h2>
 
@@ -213,7 +250,9 @@ public class SelectionSort {
 
 → Structures that correspond to a sequence of inputs or `nodes`.
 
-> The `node`:
+> 🔗 Linked lists provide a flexible and efficient way to ___organize___ and ___navigate___ through sequences of elements.
+
+<h3>Nodes</h3>
 
 ```
  ↪ +--------+     +--------+     +--------+     +--------+
@@ -229,4 +268,34 @@ public class SelectionSort {
 - Typically, in a linked list _there are one or two known access points_: the ___first___ and the ___last___.
 - The _last node_ in the list has its _Next_ pointer pointing to ___null___, indicating the _end_ of the list.
 
-> 🔗 Linked lists provide a flexible and efficient way to ___organize___ and ___navigate___ through sequences of elements.
+```
+public class Node<N> {
+    private N data;
+    private Node<N> next;
+
+    // Construtor
+    public Node(N data) {
+        this.data = data;
+        this.next = null;
+    }
+
+    // getters to 'data'
+    public N getData() {
+        return data;
+    }
+
+    public void setData(N data) {
+        this.data = data;
+    }
+
+    //getter to 'next'
+    public Node<N> getNext() {
+        return next;
+    }
+
+    public void setNext(Node<N> next) {
+        this.next = next;
+    }
+}
+
+```
