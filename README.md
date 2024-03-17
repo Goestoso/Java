@@ -126,7 +126,7 @@ public class Dog extends Animal { //extends to declare that the class is inherit
 void method (int a, int b){}
 void method (int a, int b, String c){}
 ```
-- `generics:` it's a concept in programming that allows us to write code that can operate with different types of data, in a generic way. 
+- `Generics:` it's a concept in programming that allows us to write code that can operate with different types of data, in a generic way. 
 
 ```
 public class Box<G> {
