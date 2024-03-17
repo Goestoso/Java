@@ -299,3 +299,72 @@ public class Node<N> {
 }
 
 ```
+
+<h3>Inserting Elements</h3>
+
+- Insertion at the _Beginning_:
+
+```
+public class LinkedList<L> {
+    private Node<L> head;
+
+    public void insertAtBeginning(T data) {
+        Node<L> newNode = new Node<>(data); // Creates a new node with the specified value
+        
+        // If the list is empty, the new node becomes the head of the list
+        if (head == null) {
+            head = newNode;
+        } else {
+            newNode.setNext(head); // Sets the next node as the current heady
+            head = newNode; // Updates the head for the new node
+        }
+    }
+}
+
+```
+
+- Insertion at the _Ending_ without attribute ___tale___:
+
+
+```
+public class LinkedList<T> {
+    private Node<T> head;
+
+    // Método para inserir um elemento no final da lista
+    public void insertAtEnd(T data) {
+        Node<T> newNode = new Node<>(data); // Creates a new node with the specified value
+
+        if (head == null) { //  If the list was empty
+            head = newNode; //The new node becomes the head
+        } else {
+            Node<T> current = head;
+            // Scroll through the list until you find the last node
+            while (current.getNext() != null) {
+                current = current.getNext();
+            }
+            // Sets the next node of the last node as the new node
+            current.setNext(newNode);
+        }
+    }
+}
+
+```
+
+- Insertion at the _Ending_ with attribute ___tale___:
+
+```
+public class LinkedList<L> {
+private Node<T> tail; //To store a reference to the last node in the list
+
+    public void insertAtEnd(T data) {
+        Node<L> newNode = new Node<>(data); // Creates a new node with the specified value
+           if (tail == null) { // If the list was empty
+               head = newNode; // The new node becomes the head
+               tail = newNode; // The new node also becomes the tail
+           } else {
+               tail.setNext(newNode); // Sets the next node of the current tail as the new node
+               tail = newNode; // Updates the tail to the new node
+           }
+       }
+}
+```
