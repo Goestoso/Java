@@ -527,6 +527,18 @@ AFTER
 
 > `LIFO:` obeys the criterion ___Last in, First out___, that is, the last element that enters the set will be the first to leave.
 
+```
+     Top of the stack (order of insertion or remotion)
+           |
+           v
+       +-------+ 
+       | ItemB | 
+       +-------+  
+       | ItemA |  
+       +-------+ 
+
+```
+
 ⚙️ `Operation:` a stack is a set of ordered elements, meaning the order matters. The only element I'll be able to remove from the pile will be exactly the one at the _top_.
 
 <h4>Implementation</h4>
