@@ -499,6 +499,10 @@ BEFORE
 
 `X`: indicates the disconnection of the reference to that node.
 
+- When we remove a node from a linked list, we are effectively disconnecting it from the list structure. 
+
+- If there are no more references to that node, it becomes inaccessible and is eligible to be collected by the garbage collector.
+
 ```
 AFTER
 ↪ +-------+      +-------+      +-------+
@@ -508,4 +512,81 @@ AFTER
   +-------+      +-------+      +-------+
   |  Next |----->|  Next |----->|  Next |-----> null
   +-------+      +-------+      +-------+
+```
+
+<h2>Types of data</h2>
+
+💭 When the concept of "data type" is _decoupled from hardware resources_, an unlimited number of data types can be considered;
+🧱 A data type is an _abstract_ concept, defined by a set of logical properties;
+
+> Abstract Data Type (`TDA`): refers to the basic mathematical concept that defines the type of data.
+
+<h3>🔋 Stack (Static deployment)</h3>
+
+- New elements enter the set exclusively at the top of the stack and the only element I can pull out of the stack at any given time is the top element.
+
+> `LIFO:` obeys the criterion ___Last in, First out___, that is, the last element that enters the set will be the first to leave.
+
+⚙️ `Operation:` a stack is a set of ordered elements, meaning the order matters. The only element I'll be able to remove from the pile will be exactly the one at the _top_.
+
+<h4>Implementation</h4>
+
+- `push(object):` inserts the object at the top of the stack.
+- `pop():` removes the object at the top of the stack and returns it.
+- `lenght():` returns the number of objects in the stack.
+- `empty():` returns a Boolean indicating whether the stack is empty.
+- `full():` returns a Boolean indicating whether the stack is full.
+
+```
+public class Stack {
+
+    private Node top;
+
+    public boolean empty() {
+
+        return top == null;
+    }
+
+    public void push(int info) {
+
+        Node new = new Node(info);
+        if(!empty()) {
+
+            new.setNext(top);
+        }
+        top = new;
+    }
+
+    public int pop() {
+
+        int temp = top.getInfo();
+        top = top.getNext();
+        return temp;
+    }
+
+    public int queryTop() {
+
+        return top.getInfo();
+    }
+
+    @Override
+    public String toString(){
+        
+        String s = "";
+        if(empty()) {
+
+            s += " empty stack";
+        } else {
+            Node aux = top;
+            while (aux != null) {
+
+                s += "\n";
+                aux = aux.getNext();
+            }
+        }
+
+        return s;
+    }
+    
+}
 ```
