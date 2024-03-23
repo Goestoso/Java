@@ -417,3 +417,95 @@ AFTER
     |  Next |----->|  Next |----->|  Next |----->|  Next |-----> null
     +-------+      +-------+      +-------+      +-------+
 ```
+
+<h3>Removing Elements</h3>
+
+- Removal at the start and end ___without reference to the tail___:
+
+```
+public class LinkedList<T> {
+    private Node<T> head;
+
+    // Method to remove the element from the top of the list
+    public void removeFirst() {
+        if (head != null) {
+            head = head.getNext();
+        }
+    }
+
+    // Method to remove the element from the end of the list
+    public void removeLast() {
+        if (head == null || head.getNext() == null) {
+            head = null;
+        } else {
+            Node<T> current = head;
+            while (current.getNext().getNext() != null) {
+                current = current.getNext();
+            }
+            current.setNext(null);
+        }
+    }
+}
+
+```
+
+- Removal at the start and end ___with reference to the tail___:
+
+```
+public class LinkedList<T> {
+    private Node<T> head;
+    private Node<T> tail;
+
+     // Method to remove the element from the top of the list
+    public void removeFirst() {
+        if (head != null) {
+            head = head.getNext();
+            if (head == null) { // Se a lista ficar vazia após a remoção, atualiza a cauda também
+                tail = null;
+            }
+        }
+    }
+
+    // Method to remove the element from the end of the list
+    public void removeLast() {
+        if (head == null || head.getNext() == null) {
+            head = null;
+            tail = null;
+        } else {
+            Node<T> current = head;
+            while (current.getNext().getNext() != null) {
+                current = current.getNext();
+            }
+            current.setNext(null);
+            tail = current; // Atualiza a cauda para o penúltimo nó
+        }
+    }
+}
+
+```
+
+> What happens (_in both cases_) :
+
+```
+BEFORE
+ ↪ +--------+     +--------+     +--------+     +--------+
+    | Node  |      | Node  |      | Node  |      |  Node |
+    +-------+      +-------+      +-------+      +-------+
+    |  Data |      |  Data |      |  Data |      |  Data |
+    +-------+      +-------+      +-------+      +-------+
+    |  Next |----->|  Next |----->|  Next |---X->|  Next |----> null
+    +-------+      +-------+      +-------+      +-------+
+```
+
+`X`: indicates the disconnection of the reference to that node.
+
+```
+AFTER
+↪ +-------+      +-------+      +-------+
+  | Node  |      | Node  |      | Node  |
+  +-------+      +-------+      +-------+
+  |  Data |      |  Data |      |  Data |
+  +-------+      +-------+      +-------+
+  |  Next |----->|  Next |----->|  Next |-----> null
+  +-------+      +-------+      +-------+
+```
