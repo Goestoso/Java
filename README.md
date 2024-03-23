@@ -517,6 +517,7 @@ AFTER
 <h2>Types of data</h2>
 
 💭 When the concept of "data type" is _decoupled from hardware resources_, an unlimited number of data types can be considered;
+<br>
 🧱 A data type is an _abstract_ concept, defined by a set of logical properties;
 
 > Abstract Data Type (`TDA`): refers to the basic mathematical concept that defines the type of data.
